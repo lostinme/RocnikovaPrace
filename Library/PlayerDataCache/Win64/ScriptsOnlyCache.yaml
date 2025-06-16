@@ -95,6 +95,18 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: mainMenu
+    methodName: quit
+  - assembly: Assembly-CSharp
+    fullTypeName: mainMenu
+    methodName: play
+  - assembly: Assembly-CSharp
+    fullTypeName: mainMenu
+    methodName: settingsButt
+  - assembly: Assembly-CSharp
+    fullTypeName: mainMenu
+    methodName: back
+  - assembly: Assembly-CSharp
     fullTypeName: playerMovement
     methodName: back
   - assembly: Assembly-CSharp
@@ -122,17 +134,17 @@ ScriptsOnlyBuild:
     fullTypeName: Inventory
     methodName: email
   - assembly: Assembly-CSharp
-    fullTypeName: mainMenu
-    methodName: quit
+    fullTypeName: buttonShelfScirpt
+    methodName: minus
   - assembly: Assembly-CSharp
-    fullTypeName: mainMenu
-    methodName: play
+    fullTypeName: shopCanvas
+    methodName: glueM
   - assembly: Assembly-CSharp
-    fullTypeName: mainMenu
-    methodName: settingsButt
+    fullTypeName: buttonShelfScirpt
+    methodName: plus
   - assembly: Assembly-CSharp
-    fullTypeName: mainMenu
-    methodName: back
+    fullTypeName: shopCanvas
+    methodName: glueP
   - assembly: Assembly-CSharp
     fullTypeName: buttonShelfScirpt
     methodName: minus
@@ -289,18 +301,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: sceneManager
     methodName: Factory
-  - assembly: Assembly-CSharp
-    fullTypeName: buttonShelfScirpt
-    methodName: minus
-  - assembly: Assembly-CSharp
-    fullTypeName: shopCanvas
-    methodName: glueM
-  - assembly: Assembly-CSharp
-    fullTypeName: buttonShelfScirpt
-    methodName: plus
-  - assembly: Assembly-CSharp
-    fullTypeName: shopCanvas
-    methodName: glueP
   - assembly: Assembly-CSharp
     fullTypeName: shopCanvas
     methodName: buy
@@ -368,6 +368,18 @@ ScriptsOnlyBuild:
     fullTypeName: buttonShelfScirpt
     methodName: plus
   - assembly: Assembly-CSharp
+    fullTypeName: buttonShelfScirpt
+    methodName: minus
+  - assembly: Assembly-CSharp
+    fullTypeName: buttonShelfScirpt
+    methodName: plus
+  - assembly: Assembly-CSharp
+    fullTypeName: buttonShelfScirpt
+    methodName: minus
+  - assembly: Assembly-CSharp
+    fullTypeName: buttonShelfScirpt
+    methodName: plus
+  - assembly: Assembly-CSharp
     fullTypeName: playerMovement
     methodName: back
   - assembly: Assembly-CSharp
@@ -382,18 +394,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Inventory
     methodName: Leave
-  - assembly: Assembly-CSharp
-    fullTypeName: buttonShelfScirpt
-    methodName: minus
-  - assembly: Assembly-CSharp
-    fullTypeName: buttonShelfScirpt
-    methodName: plus
-  - assembly: Assembly-CSharp
-    fullTypeName: buttonShelfScirpt
-    methodName: minus
-  - assembly: Assembly-CSharp
-    fullTypeName: buttonShelfScirpt
-    methodName: plus
   - assembly: Assembly-CSharp
     fullTypeName: buttonShelfScirpt
     methodName: minus
@@ -472,59 +472,59 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1536}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1538}
-    - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1568}
     - Class: 114
       Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1574}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 2160}
     - Class: 114
-      Script: {instanceID: 1618}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 2166}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 2742}
+      Script: {instanceID: 3584}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 3824}
     - Class: 114
-      Script: {instanceID: 3828}
+      Script: {instanceID: 4296}
     - Class: 114
-      Script: {instanceID: 4300}
+      Script: {instanceID: 4438}
     - Class: 114
-      Script: {instanceID: 4442}
+      Script: {instanceID: 4610}
     - Class: 114
-      Script: {instanceID: 4614}
+      Script: {instanceID: 4726}
     - Class: 114
-      Script: {instanceID: 4730}
+      Script: {instanceID: 4774}
     - Class: 114
-      Script: {instanceID: 4778}
+      Script: {instanceID: 5022}
     - Class: 114
-      Script: {instanceID: 5026}
+      Script: {instanceID: 5096}
     - Class: 114
-      Script: {instanceID: 5100}
+      Script: {instanceID: 5812}
     - Class: 114
-      Script: {instanceID: 5816}
+      Script: {instanceID: 5908}
     - Class: 114
-      Script: {instanceID: 6124}
+      Script: {instanceID: 6122}
     - Class: 114
-      Script: {instanceID: 6138}
+      Script: {instanceID: 6136}
     - Class: 114
-      Script: {instanceID: 6474}
+      Script: {instanceID: 6472}
     - Class: 114
-      Script: {instanceID: 6558}
+      Script: {instanceID: 6556}
+    - Class: 114
+      Script: {instanceID: 7150}
     - Class: 114
       Script: {instanceID: 7420}
     - Class: 114
       Script: {instanceID: 7866}
     - Class: 114
-      Script: {instanceID: 28728}
+      Script: {instanceID: 28768}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -562,8 +562,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
     - Class: 65
@@ -581,55 +579,47 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1536}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1538}
-    - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1568}
     - Class: 114
       Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1574}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 1618}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2204}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 3584}
     - Class: 114
-      Script: {instanceID: 2742}
+      Script: {instanceID: 3756}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 4296}
     - Class: 114
-      Script: {instanceID: 3760}
+      Script: {instanceID: 4726}
     - Class: 114
-      Script: {instanceID: 4020}
+      Script: {instanceID: 4774}
     - Class: 114
-      Script: {instanceID: 4128}
+      Script: {instanceID: 4904}
     - Class: 114
-      Script: {instanceID: 4300}
+      Script: {instanceID: 5022}
     - Class: 114
-      Script: {instanceID: 4382}
+      Script: {instanceID: 5036}
     - Class: 114
-      Script: {instanceID: 4730}
+      Script: {instanceID: 5096}
     - Class: 114
-      Script: {instanceID: 4778}
+      Script: {instanceID: 5812}
     - Class: 114
-      Script: {instanceID: 4908}
+      Script: {instanceID: 5908}
     - Class: 114
-      Script: {instanceID: 5026}
+      Script: {instanceID: 6122}
     - Class: 114
-      Script: {instanceID: 5040}
+      Script: {instanceID: 6136}
     - Class: 114
-      Script: {instanceID: 5100}
-    - Class: 114
-      Script: {instanceID: 5816}
-    - Class: 114
-      Script: {instanceID: 6124}
-    - Class: 114
-      Script: {instanceID: 6138}
+      Script: {instanceID: 7150}
     - Class: 114
       Script: {instanceID: 7866}
     - Class: 115
@@ -684,23 +674,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1564}
+    - Class: 114
       Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1618}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 4978}
     - Class: 114
-      Script: {instanceID: 4982}
+      Script: {instanceID: 5096}
     - Class: 114
-      Script: {instanceID: 5100}
+      Script: {instanceID: 5812}
     - Class: 114
-      Script: {instanceID: 5816}
-    - Class: 114
-      Script: {instanceID: 6138}
+      Script: {instanceID: 6136}
     - Class: 114
       Script: {instanceID: 7642}
     - Class: 115
@@ -732,6 +722,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
@@ -741,27 +733,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1564}
+    - Class: 114
+      Script: {instanceID: 1568}
+    - Class: 114
       Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1574}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 2198}
     - Class: 114
-      Script: {instanceID: 1618}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2678}
     - Class: 114
-      Script: {instanceID: 2684}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 4016}
     - Class: 114
-      Script: {instanceID: 5026}
+      Script: {instanceID: 4124}
     - Class: 114
-      Script: {instanceID: 5100}
+      Script: {instanceID: 4378}
     - Class: 114
-      Script: {instanceID: 5816}
+      Script: {instanceID: 5022}
     - Class: 114
-      Script: {instanceID: 6138}
+      Script: {instanceID: 5096}
+    - Class: 114
+      Script: {instanceID: 5812}
+    - Class: 114
+      Script: {instanceID: 6136}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -814,43 +814,43 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1536}
+      Script: {instanceID: 1564}
     - Class: 114
-      Script: {instanceID: 1538}
-    - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1568}
     - Class: 114
       Script: {instanceID: 1570}
     - Class: 114
-      Script: {instanceID: 1574}
+      Script: {instanceID: 1612}
     - Class: 114
-      Script: {instanceID: 1576}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 1618}
+      Script: {instanceID: 2736}
     - Class: 114
-      Script: {instanceID: 2622}
+      Script: {instanceID: 2824}
     - Class: 114
-      Script: {instanceID: 2742}
+      Script: {instanceID: 3202}
     - Class: 114
-      Script: {instanceID: 2830}
+      Script: {instanceID: 3584}
     - Class: 114
-      Script: {instanceID: 3208}
+      Script: {instanceID: 4296}
     - Class: 114
-      Script: {instanceID: 4300}
+      Script: {instanceID: 4774}
     - Class: 114
-      Script: {instanceID: 4778}
+      Script: {instanceID: 5022}
     - Class: 114
-      Script: {instanceID: 5026}
+      Script: {instanceID: 5096}
     - Class: 114
-      Script: {instanceID: 5100}
+      Script: {instanceID: 5812}
     - Class: 114
-      Script: {instanceID: 5816}
+      Script: {instanceID: 5908}
     - Class: 114
-      Script: {instanceID: 6124}
+      Script: {instanceID: 6122}
     - Class: 114
-      Script: {instanceID: 6138}
+      Script: {instanceID: 6136}
     - Class: 114
-      Script: {instanceID: 6474}
+      Script: {instanceID: 6472}
+    - Class: 114
+      Script: {instanceID: 7150}
     - Class: 114
       Script: {instanceID: 7866}
     - Class: 115
@@ -872,24 +872,6 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
-  - hash:
-      serializedVersion: 2
-      Hash: 50480f89d813408642217a7405b5c649
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: playerLeavingScene
-  - hash:
-      serializedVersion: 2
-      Hash: 235812363a0662b4a7a102534e4565cb
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: playerMovement
-  - hash:
-      serializedVersion: 2
-      Hash: 3ef3a29db0eb75553543878a795a457f
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: playerQue
   - hash:
       serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
@@ -1292,6 +1274,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionExit2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 235812363a0662b4a7a102534e4565cb
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: playerMovement
   - hash:
       serializedVersion: 2
       Hash: 0a3f328f3ea906bbbcf794f4c27ee59d
@@ -1708,6 +1696,12 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: 50480f89d813408642217a7405b5c649
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: playerLeavingScene
+  - hash:
+      serializedVersion: 2
       Hash: da5a949a0bbd2ff91bc51c5805c2c41f
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1930,6 +1924,12 @@ ScriptsOnlyBuild:
     className: UnityOnMoveMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 3ef3a29db0eb75553543878a795a457f
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: playerQue
+  - hash:
+      serializedVersion: 2
       Hash: d0392b7f3f52d5af537ade186b4f51f1
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
@@ -2068,9 +2068,9 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   platform: 19
   scenePathNames:
-  - Assets/Scenes/house.unity
   - Assets/Scenes/mainMenu.unity
+  - Assets/Scenes/house.unity
   - Assets/Scenes/shop.unity
   - Assets/Scenes/factory.unity
   - Assets/Scenes/lastEndingScene.unity
-  playerPath: C:/Users/l0sti/Desktop/Sticker Mania/Sticker Mania.exe
+  playerPath: C:/Users/l0sti/RocnikovaPrace/Hra/Sticker Mania.exe
